@@ -26,7 +26,7 @@ The tool joins several sliced plates into one job. After each print the printer:
 pip install bambu-autoeject
 ```
 
-Python 3.8 or newer, no other dependencies. Without installing you can also run `python3 autoeject.py ...` from a clone of this repository.
+Python 3.9 or newer, no other dependencies. Without installing you can also run `python3 autoeject.py ...` from a clone of this repository.
 
 ## Usage
 
