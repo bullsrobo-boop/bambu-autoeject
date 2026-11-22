@@ -10,7 +10,7 @@ The tool joins several sliced plates into one job. After each print the printer:
 2. lowers the nozzle to 1 mm behind the parts and pushes them forward, in lanes 6 mm apart, until they fall off the front of the bed;
 3. re-homes and starts the next print.
 
-> **Status: alpha, not yet tested on a real printer.** The G-code is generated and covered by tests, but the eject moves have not been run on hardware. Do the dry run first and stay next to the printer for the first real runs. Test reports are the most useful contribution right now: [open a printer test report](../../issues/new?template=printer-test.yml).
+> **Status: alpha, not yet tested on a real printer.** The G-code is generated and covered by tests, but the eject moves have not been run on hardware. Do the dry run first and stay next to the printer for the first real runs. Test reports are the most useful contribution right now: [open a printer test report](https://github.com/bullsrobo-boop/bambu-autoeject/issues/new?template=printer-test.yml).
 
 ## Supported printers
 
@@ -99,8 +99,8 @@ Bambu Studio writes the whole job as plain G-code inside the `.gcode.3mf` archiv
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Run the tests with `python3 -m unittest`.
+See [CONTRIBUTING.md](https://github.com/bullsrobo-boop/bambu-autoeject/blob/main/CONTRIBUTING.md). Run the tests with `python3 -m unittest`.
 
 ## License
 
-MIT, see [LICENSE](LICENSE). Use at your own risk: this changes how your printer moves.
+MIT, see [LICENSE](https://github.com/bullsrobo-boop/bambu-autoeject/blob/main/LICENSE). Use at your own risk: this changes how your printer moves.
