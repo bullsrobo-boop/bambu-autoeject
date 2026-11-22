@@ -1,0 +1,38 @@
+name: Printer test report
+description: Tell us how a run went on your printer
+labels: ["test report"]
+body:
+  - type: dropdown
+    id: printer
+    attributes:
+      label: Printer
+      options: ["Bambu Lab A1", "Bambu Lab A1 mini", "Other"]
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware version
+  - type: dropdown
+    id: file
+    attributes:
+      label: What did you run?
+      options: ["1_dry_run", "2_eject_one_cube", "3_two_cubes", "My own job"]
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Plate and filament
+      placeholder: Textured PEI, PLA
+  - type: textarea
+    id: result
+    attributes:
+      label: What happened?
+      description: Did it wait for cooling, push the part off, start the next print? Photos or a short video help a lot.
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command and options used
