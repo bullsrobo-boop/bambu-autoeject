@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bambu-autoeject"
+dynamic = ["version"]
+description = "Chain prints on a Bambu Lab A1 and push each finished part off the bed, no extra hardware"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["3d-printing", "bambu-lab", "a1", "gcode", "print-farm", "auto-eject"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Manufacturing",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Printing",
+]
+
+[project.scripts]
+bambu-autoeject = "bambu_autoeject.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/bullsrobo-boop/bambu-autoeject"
+Issues = "https://github.com/bullsrobo-boop/bambu-autoeject/issues"
+
+[tool.setuptools]
+packages = ["bambu_autoeject"]
+
+[tool.setuptools.dynamic]
+version = { attr = "bambu_autoeject.__version__" }
